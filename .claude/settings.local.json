@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python src/fetch.py)",
+      "Bash(pip install:*)",
+      "Bash(python -c \":*)",
+      "Bash(python -c \"import sys; sys.stdout.buffer.write\\(sys.stdin.buffer.read\\(\\)\\)\")",
+      "Bash(python src/map_resilience.py)",
+      "Bash(start \"\" \"c:/Users/erezf/data-gov/data/processed/resilience_centers_map.html\")",
+      "WebFetch(domain:me.health.gov.il)",
+      "WebFetch(domain:www.health.gov.il)",
+      "WebFetch(domain:www.gov.il)",
+      "Bash(streamlit run:*)",
+      "Bash(python -m streamlit run c:/Users/erezf/data-gov/dashboard/app.py)",
+      "Bash(python -m streamlit run c:/Users/erezf/data-gov/dashboard/app.py --server.headless true)",
+      "Bash(curl -s \"https://me.health.gov.il/mental-health/\")",
+      "Bash(curl -s \"https://me.health.gov.il/css/rtl/general.css?d=1\")",
+      "Bash(curl -s \"https://me.health.gov.il/css/rtl/header-v2.css?d=1\")",
+      "Bash(curl -s \"https://me.health.gov.il/css/theme/style-theme-assets-1.css?d=1\")",
+      "Bash(curl -s \"https://me.health.gov.il/css/rtl/fonts.css?d=1\")",
+      "Bash(curl -s \"https://me.health.gov.il/css/rtl/site-theme-v2.css?d=1\")",
+      "Bash(curl -s \"https://me.health.gov.il/css/rtl/footer.css?d=1\")",
+      "Bash(curl -s \"https://me.health.gov.il/css/rtl/general-v2.css?d=1\")",
+      "Bash(python -c \"import plotly; print\\(plotly.__version__\\)\")",
+      "Bash(git --version)",
+      "Bash(gh --version)",
+      "Bash(winget install:*)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/erezfamily-cmyk/resilience-map/pages --method POST --field source='{\"\"branch\"\":\"\"main\"\",\"\"path\"\":\"\"/\"\"}')",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/erezfamily-cmyk/resilience-map/pages --method POST --field 'source[branch]=main' --field 'source[path]=/')",
+      "Bash(\"/c/Program Files/GitHub CLI/gh.exe\" api repos/erezfamily-cmyk/resilience-map/pages)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(''''Status:'''', d.get\\(''''status''''\\)\\); print\\(''''URL:'''', d.get\\(''''html_url''''\\)\\)\")",
+      "Bash(gh auth:*)"
+    ]
+  }
+}
